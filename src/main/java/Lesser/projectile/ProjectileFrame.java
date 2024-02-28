@@ -10,13 +10,13 @@ import java.awt.event.ActionListener;
 
 public class ProjectileFrame extends JFrame
 {
-    private JTextField velocityField;
-    private JSlider angleSlider;
-    private JTextField secondsField;
-    private JLabel lx;
-    private JLabel ly;
-    private JLabel peakY;
-    private JLabel interceptX;
+    private final JTextField velocityField;
+    private final JSlider angleSlider;
+    private final JTextField secondsField;
+    private final JLabel lx;
+    private final JLabel ly;
+    private final JLabel peakY;
+    private final JLabel interceptX;
 
     private ProjectileGraph graph;
     public ProjectileFrame() {
@@ -26,7 +26,6 @@ public class ProjectileFrame extends JFrame
 
         JPanel main = new JPanel();
         main.setLayout(new BorderLayout());
-        // tells the JFrame to use this JPanel
         setContentPane(main);
 
         JPanel west = new JPanel();
