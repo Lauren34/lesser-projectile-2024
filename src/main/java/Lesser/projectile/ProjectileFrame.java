@@ -100,7 +100,7 @@ public class ProjectileFrame extends JFrame
         velocityField.getDocument().addDocumentListener(docListener);
         secondsField.getDocument().addDocumentListener(docListener);
 
-        ProjectileGraph graph = new ProjectileGraph();
+        graph = new ProjectileGraph();
         main.add(graph, BorderLayout.CENTER);
     }
 
