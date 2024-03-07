@@ -1,4 +1,4 @@
-package Lesser.projectile;
+package lesser.projectile;
 
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;

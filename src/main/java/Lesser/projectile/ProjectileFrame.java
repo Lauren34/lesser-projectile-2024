@@ -1,4 +1,4 @@
-package Lesser.projectile;
+package lesser.projectile;
 
 import javax.swing.*;
 import javax.swing.event.ChangeEvent;
@@ -8,8 +8,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class ProjectileFrame extends JFrame
-{
+public class ProjectileFrame extends JFrame {
     private final JTextField velocityField;
     private final JSlider angleSlider;
     private final JTextField secondsField;
@@ -19,6 +18,7 @@ public class ProjectileFrame extends JFrame
     private final JLabel interceptX;
 
     private ProjectileGraph graph;
+
     public ProjectileFrame() {
         setSize(800, 600);
         setTitle("Projectile Calculator");
@@ -104,8 +104,7 @@ public class ProjectileFrame extends JFrame
     }
 
     public void calculations() {
-        Projectile projectile = new Projectile(angleSlider.getValue(),
-                Double.parseDouble(velocityField.getText()));
+        Projectile projectile = new Projectile(angleSlider.getValue(), Double.parseDouble(velocityField.getText()));
         projectile.setSeconds(Double.parseDouble(secondsField.getText()));
 
         lx.setText(Double.toString(projectile.getX()));
