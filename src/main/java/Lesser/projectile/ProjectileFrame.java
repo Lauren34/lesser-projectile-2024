@@ -16,9 +16,8 @@ public class ProjectileFrame extends JFrame {
     private final JLabel ly;
     private final JLabel peakY;
     private final JLabel interceptX;
-
     private ProjectileGraph graph;
-
+    
     public ProjectileFrame() {
         setSize(800, 600);
         setTitle("Projectile Calculator");
